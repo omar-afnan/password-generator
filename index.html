@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="Images/password.png" type="image/x-icon">
+</head>
+
+
+<body>
+  <div class="container">
+    <h2>Generate a <br><span>strong password</span></h2>
+    <div class="display">
+      <input type="text" id="password" placeholder="password" readonly>
+      <i class="ri-file-copy-fill" id="icon" onclick="copyPassword()"></i>
+    </div>
+    <button onclick="createPassword()"> 
+      <img src="Images/generate.png" alt="Generate Icon"> Generate Password 
+    </button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

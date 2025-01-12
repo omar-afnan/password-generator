@@ -1,0 +1,102 @@
+:root {
+  --background-color: #004643;
+  --headline-color: #ffffff;
+  --paragraph-color: #abd1c6;
+  --button-color: #f9bc60;
+  --button-text-color: #001e1d;
+  --stroke-color: #001e1d;
+  --main-color: #e8e4e6;
+  --highlight-color: #f9bc60;
+  --secondary-color: #abd1c6;
+  --tertiary-color: #e16162;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--paragraph-color);
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  min-height: 100vh; /* Full-screen height */
+}
+
+.container {
+  margin: 12px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.container h2 {
+  font-weight: 200;
+  font-size: 45px;
+  color: var(--headline-color);
+  margin-bottom: 20px;
+}
+
+.container h2 span {
+  color: var(--paragraph-color);
+  border-bottom: 4px solid var(--highlight-color);
+  padding-bottom: 1px;
+  font-size: 40px;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures input and icon are spaced well */
+  padding: 10px;
+  gap: 10px; /* Adds space between the input and icon */
+  border-radius: 10px;
+  background: var(--main-color); /* Optional background for input container */
+}
+
+.display #icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--paragraph-color);
+}
+
+.display input {
+  flex: 1; /* Input takes remaining space */
+  border: 1px solid var(--paragraph-color);
+  outline: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.container button img {
+  width: 28px;
+  margin-right: 10px;
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background: var(--button-color);
+  color: var(--button-text-color);
+  padding: 16px 26px;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin:20px ;
+}
+
+.container button:hover {
+  background: var(--highlight-color);
+}
