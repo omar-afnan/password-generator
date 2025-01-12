@@ -3,27 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Password Generator</title>
+  <title>Random Email and Password Generator</title>
   <link rel="stylesheet" href="style.css">
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet" />
-    <link rel="shortcut icon" href="Images/password.png" type="image/x-icon">
+  <link rel="shortcut icon" href="Images/password.png" type="image/x-icon">
 </head>
-
-
 <body>
-  <div class="container">
-    <h2>Generate a <br><span>strong password</span></h2>
-    <div class="display">
-      <input type="text" id="password" placeholder="password" readonly>
-      <i class="ri-file-copy-fill" id="icon" onclick="copyPassword()"></i>
-    </div>
-    <button onclick="createPassword()"> 
-      <img src="Images/generate.png" alt="Generate Icon"> Generate Password 
-    </button>
-  </div>
+  <div class="main-container">
+    <!-- Email Section -->
+    <form id="email-form">
+      <label for="email">Generate a Strong Email</label>
+      <div class="input-wrapper">
+        <input type="email" id="email" placeholder="Email" readonly>
+        <i class="ri-mail-line icon"></i>
+      </div>
+      <button type="button" id="email-btn" onclick="generateEmail()">Generate Email</button>
+    </form>
 
+    <!-- Password Section -->
+    <form id="password-form">
+      <label for="password">Generate a Strong Password</label>
+      <div class="input-wrapper">
+        <input type="text" id="password" placeholder="Password" readonly>
+        <i class="ri-file-copy-line icon" onclick="copyPassword()"></i>
+      </div>
+      <button type="button" id="password-btn" onclick="createPassword()">Generate Password</button>
+    </form>
+  </div>
 
   <script src="script.js"></script>
 </body>

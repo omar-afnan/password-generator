@@ -1,3 +1,13 @@
+// Generate a random email address
+function generateEmail() {
+  const domains = ["example.com", "testmail.com", "random.org"];
+  const randomUser = Math.random().toString(36).substring(2, 10); // Random user name
+  const randomDomain = domains[Math.floor(Math.random() * domains.length)];
+  const email = `${randomUser}@${randomDomain}`;
+  document.getElementById("email").value = email;
+}
+
+// Enhanced random password generator
 const passwordBox = document.getElementById("password");
 const length = 20;
 
